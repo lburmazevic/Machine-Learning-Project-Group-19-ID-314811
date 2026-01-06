@@ -99,7 +99,7 @@ Different numbers of clusters are tested.
 The Silhouette Score is computed for each configuration.
 Cluster distributions are visually inspected to support interpretability.
 
-This structured procedure ensures that conclusions are data-driven and consistent across experiments.
+Conclusions are based on data and consistent across experiments (thanks to this methodical process).
 ### Evaluation Metrics
 
 The primary evaluation metric used in all experiments is the Silhouette Score.
@@ -108,6 +108,62 @@ It is chosen because:
 -it does not require labeled data
 -it provides an intuitive measure of clustering quality
 -and it allows comparison across different clustering methods and parameters.
+
+## Section 4 Results
+
+### Main Findings
+
+Our clustering analysis reveals clear and meaningful groupings of NBA players based on their statistical performance profiles.
+
+Using the Silhouette Score, we observe that both K-Means and hierarchical Clustering are able to identify structured clusters, but K-Means generally provides more compact and well-separated groups. This suggests that players can be grouped into distinct performance-based roles using numerical features alone.
+
+The resulting clusters reflect different types of players, such as:
+- high-usage offensive players,
+- more balanced all-around contributors,
+- and players with lower statistical impact.
+
+These results support the idea that clustering can capture underlying role patterns without relying on predefined labels or positions.
+
+---
+
+### Placeholder Figure
+
+**Figure 1: Silhouette Score for Different Numbers of Clusters (K-Means and Agglomerative Clustering)**  
+
+(This figure is generated from the code and shows how clustering quality changes as the number of clusters varies.)
+
+
+
+### Placeholder Table
+
+**Table 1: Average Feature Values per Cluster (K-Means)**  
+
+(This table summarizes the main statistical characteristics of each cluster, helping to interpret the identified player groups.)
+
+
+## Section 5 Conclusions
+
+### Take-away Message
+
+In this project, we applied clustering techniques to NBA player statistics to explore performance patterns and role dynamics.  
+Our findings show that unsupervised learning methods can effectively group players based on similar performance characteristics, offering an interpretable view of player roles and development without relying on explicit labels.
+
+This approach aligns well with the Court Dynamics perspective, where understanding structure and evolution is more important than prediction.
+
+
+
+### Limitations and Future Work
+
+Even though the clustering results are instructive, there are still some unanswered questions.  
+Only numerical characteristics are used in the analysis, and contextual elements like team tactics, coaching choices, or injuries are not specifically taken into consideration.
+
+Future work could include:
+- Using temporal analysis to monitor players movements between clusters over time,Including advanced or contextual metrics,
+- Investigating different clustering methods to confirm the patterns found.
+
+These extensions could provide deeper insights into player evolution and long-term performance dynamics.
+
+End of the report...
 
 
 
