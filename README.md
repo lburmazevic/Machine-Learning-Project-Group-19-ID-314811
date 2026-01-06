@@ -67,6 +67,9 @@ We experiment with multiple clustering techniques to explore the structure of th
 - **Hierarchical (Agglomerative) Clustering**  
   Used to analyze hierarchical relationships between players and observe how groups form at different similarity levels.
 
+- **Gaussian Mixture Model (GMM)**
+ We used a Gaussian Mixture Model because it can handle flexible and overlapping clusters. This is useful for player data, where roles are not always clearly separated and can change gradually
+
 (Used more than one clustering method because it allows us to compare results and assess the strength of the discovered patterns).
 
 ### Model Evaluation
